@@ -9,6 +9,7 @@ const userSchema = new Schema({
   height: Number,
   weight: Number,
   goalweight: Number,
+  fitnessexperience: Number,
   workouts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Workout'}] // create a workout Schema. This references that Schema.
 });
 
