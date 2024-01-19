@@ -13,6 +13,6 @@ const userSchema = new Schema({
   workouts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Workout'}] // create a workout Schema. This references that Schema.
 });
 
-const User = models.Game || model('User', userSchema);
+const User = models.User || model('User', userSchema);
 
 export default User;
