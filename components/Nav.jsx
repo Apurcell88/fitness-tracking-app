@@ -10,7 +10,7 @@ const Nav = () => {
     <nav>
       {!isLoggedIn ?
         <div>
-          {/* <Image src="assets/logo.png" alt='Logo' width={50} height={50} /> */}
+          <Image src="/assets/Lift-Log-Pro.png" alt='Logo' width={50} height={50} />
           <button>Sign In</button>
         </div> :
         <div>

@@ -11,7 +11,7 @@ export const connectToDB = async () => {
   }
 
   try {
-    await mongoose.connect('mongodb+srv://apurcell88:cubs1988@cluster0.8rkyrqo.mongodb.net/', {
+    await mongoose.connect(process.env.MONGODB_URI, {
       dbName: 'fitness_app',
       useNewUrlParser: true,
       useUnifiedTopology: true,
