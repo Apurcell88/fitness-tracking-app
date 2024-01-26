@@ -1,4 +1,5 @@
 import { Schema, model, models} from 'mongoose';
+import mongoose from 'mongoose';
 
 const workoutSchema = new Schema({
   name: String, // A descriptive name for the workout
