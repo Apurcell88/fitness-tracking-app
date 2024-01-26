@@ -17,13 +17,19 @@ const Nav = () => {
       setProviders(res);
     }
     setUpProviders();
+  });
+
+  useEffect(() => {
+    // const fetchUser
   })
 
   return (
     <nav>
       <Image src="/assets/Lift-Log-Pro.png" alt='Logo' width={70} height={70} />
       {session?.user ?
-        <div><h1>test</h1></div>
+        <div>
+          <h1>Welcome {}</h1>
+        </div>
         :
         <div>
           {/* Authentication */}
